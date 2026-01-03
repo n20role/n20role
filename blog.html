@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - N20role | Notícias RPG</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .blog-header { background: linear-gradient(135deg, rgba(176, 0, 255, 0.1), rgba(0, 217, 255, 0.1)); padding: 60px 0; border-bottom: 2px solid var(--purple-neon); margin-top: 80px; }
+        .blog-header h1 { font-size: 48px; margin-bottom: 10px; background: linear-gradient(135deg, var(--purple-neon), var(--pink-hot)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .blog-container { display: grid; grid-template-columns: 1fr 300px; gap: 40px; padding: 60px 0; }
+        .blog-posts { display: grid; grid-template-columns: 1fr; gap: 40px; }
+        .blog-post { background: rgba(176, 0, 255, 0.05); border: 2px solid var(--purple-neon); border-radius: 12px; padding: 40px; transition: all 0.3s ease; }
+        .blog-post:hover { border-color: var(--cyan-electric); box-shadow: 0 0 30px rgba(0, 217, 255, 0.3); transform: translateY(-5px); }
+        .blog-post-date { color: var(--cyan-electric); font-weight: 600; margin-bottom: 10px; font-size: 14px; }
+        .blog-post h2 { font-size: 28px; margin-bottom: 15px; color: var(--white-clean); }
+        .blog-post-excerpt { color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; }
+        .read-more-btn { color: var(--pink-hot); text-decoration: none; font-weight: 600; transition: all 0.3s ease; display: inline-block; }
+        .read-more-btn:hover { color: var(--cyan-electric); text-shadow: 0 0 15px rgba(0, 217, 255, 0.5); transform: translateX(5px); }
+        .sidebar { position: relative; }
+        .sidebar-card { background: rgba(0, 217, 255, 0.05); border: 2px solid var(--cyan-electric); border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 0 20px rgba(0, 217, 255, 0.2); }
+        .sidebar-card h3 { color: var(--cyan-electric); margin-bottom: 15px; font-size: 18px; }
+        .sidebar-card ul { list-style: none; }
+        .sidebar-card li { margin-bottom: 10px; }
+        .sidebar-card a { color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; }
+        .sidebar-card a:hover { color: var(--pink-hot); text-shadow: 0 0 10px rgba(255, 0, 110, 0.5); padding-left: 10px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><span class="brand-text">N20role</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Notícias</a></li>
+                <li><a href="voice-acting.html" class="nav-link">Voice Acting</a></li>
+                <li><a href="comunidade.html" class="nav-link">Comunidade</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="blog-header">
+        <div class="container">
+            <h1>Blog N20role</h1>
+            <p style="color: var(--text-secondary); font-size: 18px;">Notícias, atualizações e análises do universo RPG</p>
+        </div>
+    </section>
+
+    <section class="container blog-container">
+        <div class="blog-posts">
+            <article class="blog-post">
+                <div class="blog-post-date">3 de Janeiro, 2026</div>
+                <h2>Por que N20role foi criado</h2>
+                <p class="blog-post-excerpt">N20role nasceu de uma paixão compartilhada: a intersecção entre RPG, voice acting e a comunidade criativa que rodeia esses universos. Este artigo explora a história, missão e visão por trás da plataforma...</p>
+                <a href="blog/2026-01-03-por-que-n20role.html" class="read-more-btn">Leia o artigo completo →</a>
+            </article>
+
+            <article class="blog-post">
+                <div class="blog-post-date">Seu próximo artigo aqui</div>
+                <h2>Compartilhe sua história</h2>
+                <p class="blog-post-excerpt">Tem uma notícia sobre RPG, voice acting ou gaming que quer compartilhar? N20role é um espaço para a comunidade crescer e se conectar. Envie sua contribuição!</p>
+                <a href="#contato" class="read-more-btn">Saiba como contribuir →</a>
+            </article>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#rpg">📰 Notícias RPG</a></li>
+                    <li><a href="#games">🎮 Video Games</a></li>
+                    <li><a href="#voice">🎤 Voice Acting</a></li>
+                    <li><a href="#comunidade">👥 Comunidade</a></li>
+                    <li><a href="#reviews">⭐ Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Lançamentos em Destaque</h3>
+                <ul>
+                    <li><a href="#">Novo sistema de RPG</a></li>
+                    <li><a href="#">Expansion de D&D</a></li>
+                    <li><a href="#">Novo jogo multiplayer</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Comunidade</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">Junte-se a nossa comunidade vibrante de RPG players e voice actors.</p>
+                <a href="comunidade.html" style="color: var(--cyan-electric); text-decoration: none; font-weight: 600;">Ir para Comunidade →</a>
+            </div>
+        </aside>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>N20role</h4>
+                    <p>Conectando RPG Players & Voice Actors</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="voice-acting.html">Voice Acting</a></li>
+                        <li><a href="comunidade.html">Comunidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">TikTok</a></li>
+                        <li><a href="#" target="_blank">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 N20role. Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

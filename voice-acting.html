@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Acting - N20role | Oportunidades</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .va-header { background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(255, 0, 110, 0.1)); padding: 60px 0; border-bottom: 2px solid var(--cyan-electric); margin-top: 80px; }
+        .va-header h1 { font-size: 48px; margin-bottom: 10px; background: linear-gradient(135deg, var(--cyan-electric), var(--pink-hot)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .opportunities-container { padding: 60px 0; }
+        .filter-section { display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; }
+        .filter-btn { padding: 10px 20px; border: 2px solid var(--purple-neon); background: transparent; color: var(--purple-neon); border-radius: 8px; cursor: pointer; transition: all 0.3s ease; font-weight: 600; }
+        .filter-btn:hover, .filter-btn.active { background: var(--purple-neon); color: var(--bg-dark); box-shadow: var(--glow-purple); }
+        .opportunities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; }
+        .opportunity-card { background: rgba(0, 217, 255, 0.08); border: 2px solid var(--cyan-electric); border-radius: 12px; padding: 30px; transition: all 0.3s ease; }
+        .opportunity-card:hover { border-color: var(--pink-hot); box-shadow: 0 0 30px rgba(255, 0, 110, 0.3); transform: translateY(-10px); }
+        .opportunity-title { font-size: 20px; color: var(--white-clean); margin-bottom: 5px; }
+        .opportunity-type { display: inline-block; padding: 5px 12px; background: rgba(176, 0, 255, 0.3); color: var(--purple-neon); border-radius: 20px; font-size: 12px; font-weight: 600; text-transform: uppercase; }
+        .opportunity-type.game { background: rgba(0, 217, 255, 0.3); color: var(--cyan-electric); }
+        .opportunity-description { color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6; }
+        .opportunity-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
+        .meta-item { font-size: 13px; color: var(--text-secondary); }
+        .meta-label { color: var(--cyan-electric); font-weight: 600; }
+        .opportunity-footer { display: flex; gap: 10px; }
+        .apply-btn { flex: 1; padding: 12px; background: linear-gradient(135deg, var(--purple-neon), var(--pink-hot)); border: none; color: var(--white-clean); border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.3s ease; }
+        .apply-btn:hover { box-shadow: 0 0 20px rgba(176, 0, 255, 0.5); transform: scale(1.05); }
+        .save-btn { padding: 12px 15px; background: transparent; border: 2px solid var(--cyan-electric); color: var(--cyan-electric); border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.3s ease; }
+        .save-btn:hover { background: var(--cyan-electric); color: var(--bg-dark); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><span class="brand-text">N20role</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Notícias</a></li>
+                <li><a href="voice-acting.html" class="nav-link">Voice Acting</a></li>
+                <li><a href="comunidade.html" class="nav-link">Comunidade</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="va-header">
+        <div class="container">
+            <h1>🎤 Oportunidades Voice Acting</h1>
+            <p style="color: var(--text-secondary); font-size: 18px;">Encontre oportunidades em games, animações e projetos criativos</p>
+        </div>
+    </section>
+
+    <section class="container opportunities-container">
+        <div class="filter-section">
+            <button class="filter-btn active">Todas</button>
+            <button class="filter-btn">🎮 Games</button>
+            <button class="filter-btn">🎬 Animação</button>
+            <button class="filter-btn">🎙️ Podcast</button>
+            <button class="filter-btn">⭐ Recomendado</button>
+        </div>
+
+        <div class="opportunities-grid">
+            <div class="opportunity-card">
+                <h3 class="opportunity-title">Procura-se Voice Actor</h3>
+                <span class="opportunity-type game">Game</span>
+                <p class="opportunity-description">RPG indie procura voice actors em português para personagens variados. Projeto com comunidade ativa.</p>
+                <div class="opportunity-meta">
+                    <div class="meta-item"><span class="meta-label">Tipo:</span> Full Cast</div>
+                    <div class="meta-item"><span class="meta-label">Idioma:</span> Português</div>
+                    <div class="meta-item"><span class="meta-label">Experiência:</span> Iniciante-Pro</div>
+                    <div class="meta-item"><span class="meta-label">Status:</span> Aberto</div>
+                </div>
+                <div class="opportunity-footer">
+                    <button class="apply-btn">Se Candidatar</button>
+                    <button class="save-btn">💾</button>
+                </div>
+            </div>
+
+            <div class="opportunity-card">
+                <h3 class="opportunity-title">Animação de Mesa RPG</h3>
+                <span class="opportunity-type">Animação</span>
+                <p class="opportunity-description">Série de animação baseada em mesa de RPG busca voice actors para episódios. Projeto com financiamento.</p>
+                <div class="opportunity-meta">
+                    <div class="meta-item"><span class="meta-label">Tipo:</span> Guest Star</div>
+                    <div class="meta-item"><span class="meta-label">Idioma:</span> Português</div>
+                    <div class="meta-item"><span class="meta-label">Experiência:</span> Profissional</div>
+                    <div class="meta-item"><span class="meta-label">Status:</span> Seletivo</div>
+                </div>
+                <div class="opportunity-footer">
+                    <button class="apply-btn">Se Candidatar</button>
+                    <button class="save-btn">💾</button>
+                </div>
+            </div>
+
+            <div class="opportunity-card">
+                <h3 class="opportunity-title">Podcast RPG</h3>
+                <span class="opportunity-type">Podcast</span>
+                <p class="opportunity-description">Podcast semanal de RPG procura narradores e dubladores para dramatizações de campanhas ao vivo.</p>
+                <div class="opportunity-meta">
+                    <div class="meta-item"><span class="meta-label">Tipo:</span> Recurring</div>
+                    <div class="meta-item"><span class="meta-label">Idioma:</span> Português</div>
+                    <div class="meta-item"><span class="meta-label">Experiência:</span> Iniciante+</div>
+                    <div class="meta-item"><span class="meta-label">Status:</span> Aberto</div>
+                </div>
+                <div class="opportunity-footer">
+                    <button class="apply-btn">Se Candidatar</button>
+                    <button class="save-btn">💾</button>
+                </div>
+            </div>
+
+            <div class="opportunity-card">
+                <h3 class="opportunity-title">Game de Ficção Interativa</h3>
+                <span class="opportunity-type game">Game</span>
+                <p class="opportunity-description">Visual novel com sistema RPG procura dublagem profissional. Projeto sério com produção internacional.</p>
+                <div class="opportunity-meta">
+                    <div class="meta-item"><span class="meta-label">Tipo:</span> Full Cast</div>
+                    <div class="meta-item"><span class="meta-label">Idioma:</span> Português BR</div>
+                    <div class="meta-item"><span class="meta-label">Experiência:</span> Profissional</div>
+                    <div class="meta-item"><span class="meta-label">Status:</span> Seletivo</div>
+                </div>
+                <div class="opportunity-footer">
+                    <button class="apply-btn">Se Candidatar</button>
+                    <button class="save-btn">💾</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: rgba(176, 0, 255, 0.1); border: 2px solid var(--purple-neon); border-radius: 12px; padding: 40px; margin-top: 60px; text-align: center;">
+            <h3 style="color: var(--white-clean); margin-bottom: 15px;">Quer Postar uma Oportunidade?</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">Se você tem um projeto que procura voice actors, entre em contato conosco!</p>
+            <button class="apply-btn" style="width: auto; padding: 12px 40px;">Enviar Oportunidade</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>N20role</h4>
+                    <p>Conectando RPG Players & Voice Actors</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="comunidade.html">Comunidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">TikTok</a></li>
+                        <li><a href="#" target="_blank">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 N20role. Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

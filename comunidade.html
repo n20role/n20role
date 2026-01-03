@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - N20role | Hub de Jogadores e Voice Actors</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .community-header { background: linear-gradient(135deg, rgba(255, 0, 110, 0.1), rgba(176, 0, 255, 0.1)); padding: 60px 0; border-bottom: 2px solid var(--pink-hot); margin-top: 80px; }
+        .community-header h1 { font-size: 48px; margin-bottom: 10px; background: linear-gradient(135deg, var(--pink-hot), var(--purple-neon)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .community-container { padding: 60px 0; }
+        .community-grid { display: grid; grid-template-columns: 1fr 350px; gap: 40px; }
+        .community-main { display: grid; grid-template-columns: 1fr; gap: 40px; }
+        .community-about { background: rgba(176, 0, 255, 0.05); border: 2px solid var(--purple-neon); border-radius: 12px; padding: 40px; }
+        .community-about h2 { color: var(--white-clean); margin-bottom: 20px; font-size: 28px; }
+        .community-about p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 15px; }
+        .features-list { display: grid; grid-template-columns: 1fr; gap: 20px; margin: 30px 0; }
+        .feature-item { display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: rgba(0, 217, 255, 0.1); border-radius: 8px; }
+        .feature-icon { font-size: 24px; flex-shrink: 0; }
+        .feature-content h3 { color: var(--white-clean); margin-bottom: 5px; font-size: 16px; }
+        .feature-content p { color: var(--text-secondary); font-size: 14px; }
+        .values-section { background: rgba(0, 217, 255, 0.05); border: 2px solid var(--cyan-electric); border-radius: 12px; padding: 40px; }
+        .values-section h3 { color: var(--cyan-electric); margin-bottom: 20px; font-size: 24px; }
+        .values-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+        .value-item { padding: 15px; background: rgba(176, 0, 255, 0.1); border-left: 3px solid var(--pink-hot); border-radius: 4px; }
+        .value-item strong { color: var(--pink-hot); }
+        .sidebar-stats { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .stat-card { background: rgba(0, 217, 255, 0.08); border: 2px solid var(--cyan-electric); border-radius: 12px; padding: 25px; text-align: center; box-shadow: 0 0 20px rgba(0, 217, 255, 0.2); }
+        .stat-number { font-size: 36px; font-weight: 700; background: linear-gradient(135deg, var(--purple-neon), var(--cyan-electric)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 5px; }
+        .stat-label { color: var(--text-secondary); font-size: 14px; }
+        .join-cta { background: linear-gradient(135deg, rgba(176, 0, 255, 0.15), rgba(0, 217, 255, 0.15)); border: 2px solid var(--purple-neon); border-radius: 12px; padding: 40px; text-align: center; }
+        .join-cta h3 { color: var(--white-clean); margin-bottom: 15px; font-size: 24px; }
+        .join-cta p { color: var(--text-secondary); margin-bottom: 25px; }
+        .join-btn { padding: 14px 40px; background: linear-gradient(135deg, var(--purple-neon), var(--pink-hot)); border: none; color: var(--white-clean); border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+        .join-btn:hover { box-shadow: 0 0 30px rgba(176, 0, 255, 0.5); transform: scale(1.05); }
+        .platform-links { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 15px; }
+        .platform-link { display: inline-block; padding: 12px 20px; background: transparent; border: 2px solid var(--cyan-electric); color: var(--cyan-electric); border-radius: 8px; text-decoration: none; transition: all 0.3s ease; text-align: center; }
+        .platform-link:hover { background: var(--cyan-electric); color: var(--bg-dark); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><span class="brand-text">N20role</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Notícias</a></li>
+                <li><a href="voice-acting.html" class="nav-link">Voice Acting</a></li>
+                <li><a href="comunidade.html" class="nav-link">Comunidade</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="community-header">
+        <div class="container">
+            <h1>👥 Nossa Comunidade</h1>
+            <p style="color: var(--text-secondary); font-size: 18px;">Um espaço para RPG players, voice actors e criadores se conectarem</p>
+        </div>
+    </section>
+
+    <section class="container community-container">
+        <div class="community-grid">
+            <div class="community-main">
+                <div class="community-about">
+                    <h2>Bem-vindo à Comunidade N20role</h2>
+                    <p>N20role é mais que um site - é um movimento. Somos um espaço inclusivo onde jogadores de RPG, mestres de jogo, voice actors e criadores de conteúdo se encontram para compartilhar paixão, conhecimento e oportunidades.</p>
+                    <p>Nossa comunidade é construída sobre valores de respeito, criatividade e colaboração. Aqui, cada voz importa, cada história vale a pena ser contada, e cada sonho tem espaço para crescer.</p>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎮</div>
+                            <div class="feature-content">
+                                <h3>Discussões sobre RPG</h3>
+                                <p>Compartilhe campanhas, personagens e estratégias com outros jogadores</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎤</div>
+                            <div class="feature-content">
+                                <h3>Oportunidades Profissionais</h3>
+                                <p>Encontre projetos de voice acting e networking com produtores</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📚</div>
+                            <div class="feature-content">
+                                <h3>Recursos de Aprendizado</h3>
+                                <p>Guides, tutoriais e conselhos de especialistas da comunidade</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌟</div>
+                            <div class="feature-content">
+                                <h3>Reconhecimento de Criadores</h3>
+                                <p>Destaque para content creators e talentos emergentes</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <h3>Eventos e Competições</h3>
+                                <p>Participe de torneios, lives e encontros virtuais</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🤝</div>
+                            <div class="feature-content">
+                                <h3>Networking Genuíno</h3>
+                                <p>Conecte-se com pessoas que compartilham suas paixões</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="values-section">
+                    <h3>✨ Nossos Princípios</h3>
+                    <div class="values-grid">
+                        <div class="value-item"><strong>Inclusão:</strong> Todos são bem-vindos, independente de experiência ou background</div>
+                        <div class="value-item"><strong>Respeito:</strong> Valorizamos diferentes perspectivas e opiniões</div>
+                        <div class="value-item"><strong>Criatividade:</strong> Encorajamos inovação e experimentação</div>
+                        <div class="value-item"><strong>Suporte:</strong> Nos ajudamos mutuamente a crescer</div>
+                        <div class="value-item"><strong>Autenticidade:</strong> Seja você mesmo e compartilhe sua verdadeira paixão</div>
+                    </div>
+                </div>
+
+                <div class="join-cta">
+                    <h3>Pronto para Fazer Parte?</h3>
+                    <p>Junte-se a centenas de RPG players e voice actors que já estão conectados na N20role. Não perca essa oportunidade de crescer, aprender e fazer amigos genuínos!</p>
+                    <button class="join-btn">Entrar na Comunidade</button>
+                </div>
+            </div>
+
+            <aside class="sidebar-stats">
+                <div class="stat-card">
+                    <div class="stat-number">1.2K+</div>
+                    <div class="stat-label">Membros Ativos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Discussões Mensais</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Oportunidades/Mês</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Suporte Online</div>
+                </div>
+
+                <div style="background: rgba(176, 0, 255, 0.1); border: 2px solid var(--purple-neon); border-radius: 12px; padding: 25px; box-shadow: 0 0 20px rgba(176, 0, 255, 0.2);">
+                    <h4 style="color: var(--white-clean); margin-bottom: 15px; font-size: 18px;">Plataformas</h4>
+                    <div class="platform-links">
+                        <a href="#" target="_blank" class="platform-link">🎮 Discord</a>
+                        <a href="#" target="_blank" class="platform-link">📱 Instagram</a>
+                        <a href="#" target="_blank" class="platform-link">🎬 TikTok</a>
+                        <a href="#" target="_blank" class="platform-link">📺 YouTube</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>N20role</h4>
+                    <p>Conectando RPG Players & Voice Actors</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="voice-acting.html">Voice Acting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">TikTok</a></li>
+                        <li><a href="#" target="_blank">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 N20role. Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
